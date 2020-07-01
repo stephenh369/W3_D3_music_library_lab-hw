@@ -29,6 +29,20 @@ artist2 = Artist.new({
 })
 artist2.save()
 
+album3 = Album.new({
+    'title' => 'The Colour And The Shape',
+    'genre' => 'Rock',
+    'artist_id' => artist2.id
+})
+album3.save()
+
+album4 = Album.new({
+    'title' => 'In Your Honor',
+    'genre' => 'Rock',
+    'artist_id' => artist2.id
+})
+album4.save()
+
 # artist1.delete()
 
 # artist2.name = 'Arctic Monkeys'
