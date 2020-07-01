@@ -9,6 +9,20 @@ artist1 = Artist.new({
 })
 artist1.save()
 
+album1 = Album.new({
+    'title' => 'The Marshall Mathers LP',
+    'genre' => 'Hip Hop',
+    'artist_id' => artist1.id
+})
+album1.save()
+
+album2 = Album.new({
+    'title' => 'Recovery',
+    'genre' => 'Hip Hop',
+    'artist_id' => artist1.id
+})
+album2.save()
+
 artist2 = Artist.new({
     'name' => 'Foo Fighters'
 })
