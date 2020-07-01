@@ -2,6 +2,7 @@ require('pry-byebug')
 require_relative('models/Artist')
 require_relative('models/Album')
 
+Album.delete_all()
 Artist.delete_all()
 
 artist1 = Artist.new({
@@ -32,7 +33,6 @@ artist2.save()
 
 # artist2.name = 'Arctic Monkeys'
 # artist2.update()
-
 
 
 binding.pry
