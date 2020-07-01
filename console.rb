@@ -14,6 +14,11 @@ artist2 = Artist.new({
 })
 artist2.save()
 
+# artist1.delete()
+
+# artist2.name = 'Arctic Monkeys'
+# artist2.update()
+
 
 
 binding.pry
