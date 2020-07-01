@@ -8,4 +8,15 @@ class Artist
         @name = options['name']
     end
 
+    def self.all()
+        sql = "SELECT * FROM artists"
+        result = SqlRunner.run(sql)
+        return result.map() {|artist| Artist.new(artist)}
+    end
+
+    def self.delete_all()
+        sql = "DELETE From artists"
+        SqlRunner.run(sql)
+    end
+
 end
